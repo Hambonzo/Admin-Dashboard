@@ -18,8 +18,53 @@ html, body {
 .sidebar {
     columns: 1/2;
     grid-row: 1/3;
-
     background-color: rgb(0, 183, 255);
     color: white;
+    display: grid;
+    grid-template-rows: 1fr 5fr 8fr;
 }
+
+.mainHeader {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+    align-items: center;
+    height: fit-content;
+
+}
+
+.mainHeader > h1 {
+    display: flex;
+    justify-self: start;
+}
+
+.shortcuts {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+    align-items: center;
+    height: fit-content;
+    
+    
+}
+
+.shortcuts > h2 {
+    display: flex;
+    justify-self: start;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.settings > h2 {
+    display: flex;
+    justify-self: start;
+    
+}
+
 
