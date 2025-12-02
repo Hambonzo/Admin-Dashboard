@@ -4,67 +4,386 @@ html, body {
     
 }
 
+a {
+    text-decoration: none;
+}
+
+
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 6fr;
-    height: 100%;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+    
     
 }
 
 .header {
     columns:2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+   
 }
 
+.upper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 2vh;
+    
+}
+
+.upper-left {
+    display: grid;
+    grid-template-columns: 1fr 18fr;
+    justify-self: start;
+    align-items: center;
+    padding-left: 4rem;
+}
+
+.upper-left > span {
+    justify-self: center;
+}
+
+.upper-left > span > img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.search {
+    border-style: hidden;
+    border-radius: 15px;
+    background-color: rgb(229, 238, 245);
+    height: 1.8rem;
+    width: 50rem;
+}
+
+.upper-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    justify-self: end;
+    align-items: center;
+    font-weight: bold;
+    padding-right: 12vh;
+    column-gap: 3rem;
+    width: fit-content;
+}
+
+.upper-right > span {
+    justify-self: center;
+}
+
+.upper-right > span > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#bois {
+    width: 3rem;   
+    height: 3rem; 
+    border-radius: 25px;
+}
+
+.lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.lower-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: start;
+    align-items: center;
+    padding-left: 4rem;
+    column-gap: 2rem;
+}
+
+
+.lower-left > span {
+    grid-row: 1/3;
+    justify-self: center;
+}
+
+.lower-left > span > img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 30px;
+}
+
+.lower-left > p {
+    align-self:center;
+    margin: 0;
+}
+
+.lower-left > h2 {
+    grid-column: 2/4;
+    align-self: start;
+    margin:0;
+    
+    
+}
+
+.lower-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    justify-self: end;
+    padding-right: 12vh;
+}
+
+button {
+    border-style: none;
+    border-radius: 20px;
+    background-color: rgb(0, 183, 255);
+    color: aliceblue;
+    height: 2.4rem;
+    width: 7rem;
+    font-size: medium;
+    font-weight: 600;
+}
+
+
+
 .sidebar {
-    columns: 1/2;
     grid-row: 1/3;
     background-color: rgb(0, 183, 255);
     color: white;
-    display: grid;
-    grid-template-rows: 1fr 5fr 8fr;
 }
 
-.mainHeader {
+
+.sidegrid {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr 3fr;
+    margin: 0.5rem;
+    row-gap: 3rem;
+    padding-top: 1rem;
+}
+
+
+#dash {
+    height: 3rem;
+    width: 3rem;
+}
+
+.sidegrid img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.sidegrid > * {
+    min-height: 0;
+}
+
+
+.mainHeader,
+.shortcuts a,
+.settings a {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    text-decoration: none;
+    color: inherit;
+    margin: 0.4rem 0;
+}
+
+
+.mainHeader span,
+.shortcuts a span,
+.settings a span {
+    align-self: center;
+    justify-self: center;
+}
+
+
+.mainHeader h2,
+.shortcuts a h2,
+.settings a h2 {
+    align-self: center;
+    margin: 0.2em;
+    color: white;
+}
+
+
+.mainHeader h2 {
+    font-size: 2rem;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(229, 238, 245);
+    padding-bottom: 5vh;
+}
+
+.main-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5.5fr 5.5fr 5.5fr;
+    overflow-y: auto;
+    column-gap: 3rem;
+}
+
+#project-title {
+    display: grid;
+    grid-column: 1/3;
+    align-self: center;
+    padding-left: 7%;
+    
+
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    width: 30rem;
+    height: 18vh;
+    justify-self: center;
     justify-items: center;
-    align-items: center;
-    height: fit-content;
-
+    font-size: large;
+    padding: 1rem;
+    padding-top: 2rem;
+    border-left: 1rem solid rgb(247, 173, 36);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    
 }
 
-.mainHeader > h1 {
-    display: flex;
+.card > p {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin: 0;
+    color: grey;
+}
+
+.card > h3 {
+    justify-self: start;
+    align-self: end;
+    margin: 0px;
+}
+
+#imp, #easy { 
+    align-self: center;
+}
+
+#ad, #money {
+    align-self: end;
+}
+
+#less, #easy, #money {
     justify-self: start;
 }
 
-.shortcuts {
+.foot {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;    
+}
+
+.foot > span {
+    justify-self: center;
+    align-self: center;
+}
+
+.foot > span > img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.main-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr 8fr;
+}
+
+.card-a, .card-b {
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 75%;
+    
+}
+
+
+
+.card-a > div > h4 {
+    margin-bottom: 0px;
+    padding-left: 2rem;
+    
+}
+
+.card-a > div > p {
+    margin-top: 0px;
+    width: 80%;
+    padding-left: 2rem;
+    color: grey;
+    
+}
+
+.card-a > div {
+    align-self: center;
+}
+
+hr {
+    height: 1px;
+    align-self: center;
+    width: 82%;
+    background-color: silver;
+}
+
+
+
+.card-b > div {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    justify-items: center;
-    align-items: center;
-    height: fit-content;
-    
-    
+    grid-template-rows: 1fr 1fr;
 }
 
-.shortcuts > h2 {
-    display: flex;
-    justify-self: start;
+.card-b > div > span {
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
 }
 
-.settings {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    justify-items: center;
-    align-items: center;
-    height: fit-content;
+.card-b > div > span > img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 25px;
 }
 
-.settings > h2 {
-    display: flex;
-    justify-self: start;
-    
+.para-one {
+    align-self: end;
+    margin: 0px;
 }
+
+
+.para-two {
+    grid-column: 2/3;
+    align-self: start;
+    margin: 0px;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
