@@ -12,139 +12,207 @@
     <div class="container">
         <div class="header">
             <div class="upper">
-                <span></span>
-                <form action="">
-                    <input type="text" class="id" name="id" placeholder="search">
-                </form>
-                <span></span>
-                <span></span>
-                <p>Hamzeh Brophy</p>
+                <div class="upper-left">
+                    <span><img src="Icons/magnify.svg" alt="Symbol for maginifying glass"></span>
+                    <form action="">
+                        <input type="text" class="search" name="search">
+                    </form>
+                </div>
+                <div class="upper-right">
+                    <span><img src="Icons/bell-ring.svg" alt="Ringing bell"></span>
+                    <span><img src="Icons/bois.jpg" alt="The bois Solaire and siegmeyer" id="bois"></span>
+                    <h3>Hamzeh Brophy</h3>
+                </div>
             </div>
             <div class="lower">
-                <span></span>
-                <span>Hi there,</span>
-                <span>Hamzeh Brophy (@ledham)</span>
-                <form action="">
+                <div class="lower-left">
+                    <span><img src="Icons/bois.jpg" alt="The bois siegmeyer and solaire"></span>
+                    <p>Hi there,</p>
+                    <h2>Hamzeh Brophy (@ledham)</h2>
+                </div>
+                <div class="lower-right">
                     <button>New</button>
                     <button>Upload</button>
                     <button>Share</button>
-                </form>
+                </div>
             </div>
         </div>
         <div class="sidebar">
 
-            <div class="mainHeader">
-                <span>D</span>
-                <h1>Dashboard</h1>
-            </div>
-            <div class="shortcuts">
-                <span>H</span>
-                <h2>Home</h2>
-                <span>P</span>
-                <h2>Profile</h2>
-                <span>M</span>
-                <h2>Messages</h2>
-                <span>H</span>
-                <h2>History</h2>
-                <span>T</span>
-                <h2>Tasks</h2>
-                <span>C</span>
-                <h2>Communities</h2>
-            </div>
+            <div class="sidegrid">
+                <a class="mainHeader">
+                    <span><img src="Icons/view-dashboard.svg" alt="Symbol for dashboard" id="dash"></span>
+                    <h2>Dashboard</h2>
+                </a>
+                <div class="shortcuts">
+                    <a href="#">
+                        <span><img src="Icons/home.svg" alt="Home Symbol"></span>
+                        <h2>Home</h2>
+                    </a>
+                    <a href="#">
+                        <span><img src="Icons/profile.svg" alt="Profile Symbol"></span>
+                        <h2>Profile</h2>
+                    </a>
+                    <a href="#">
+                        <span><img src="Icons/message.svg" alt="Message Symbol"></span>
+                        <h2>Messages</h2>
+                    </a>
+                    <a href="#">
+                        <span><img src="Icons/history.svg" alt="History Symbol"></span>
+                        <h2>History</h2>
+                    </a>
+                    <a href="#">
+                        <span><img src="Icons/tasks.svg" alt="Task Symbol"></span>
+                        <h2>Tasks</h2>
+                    </a>
+                    <a href="#">
+                        <span><img src="Icons/communities.svg" alt="Communities Symbol"></span>
+                        <h2>Communities</h2>
+                    </a>
+                </div>
 
-            <div class="settings">
-                <span>S</span>
-                <h2>Settings</h2>
-                <span>S</span>
-                <h2>Support</h2>
-                <span>P</span>
-                <h2>Privacy</h2>
+                <div class="settings">
+                    <a href="#">
+                        <span><img src="Icons/settings.svg" alt="settings Symbol"></span>
+                        <h2>Settings</h2>
+                    </a>
+                    <a href="#">
+                        <span><img src="Icons/support.svg" alt="Support Symbol"></span>
+                        <h2>Support</h2>
+                    </a>
+                    <a href="#">
+                        <span><img src="Icons/privacy.svg" alt="Privacy Symbol"></span>
+                        <h2>Privacy</h2>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="main">
-            <h3>Your Projects</h3>
-            <div class="projects">
-                <div class="card">
+            <div class="main-left">
+                <h3 id="project-title">Your Projects</h3>
+
+                <div class="card" id="super">
                     <h3>Super Cool Project</h3>
                     <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis
                         accumsan
                         nec.</p>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="foot">
+                        <span><img src="Icons/star-plus-outline.svg" alt="star with a plus"></span>
+                        <span><img src="Icons/eye-plus-outline.svg" alt="eye with a plus"></span>
+                        <span><img src="Icons/source-fork.svg" alt="fork"></span>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card" id="less">
                     <h3>Less Cool Project</h3>
                     <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt,
                         consectetur
-                        sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
+                        sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque
+                        lacus.
                     </p>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="foot">
+                        <span><img src="Icons/star-plus-outline.svg" alt="star with a plus"></span>
+                        <span><img src="Icons/eye-plus-outline.svg" alt="eye with a plus"></span>
+                        <span><img src="Icons/source-fork.svg" alt="fork"></span>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card" id="imp">
                     <h3>Impossible App</h3>
-                    <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.
+                    </p>
+                    <div class="foot">
+                        <span><img src="Icons/star-plus-outline.svg" alt="star with a plus"></span>
+                        <span><img src="Icons/eye-plus-outline.svg" alt="eye with a plus"></span>
+                        <span><img src="Icons/source-fork.svg" alt="fork"></span>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card" id="easy">
                     <h3>Easy Peasy App</h3>
                     <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.
                         Curabitur dignissim nisi in tortor commodo, ac bibendum magna tinicidunt.</p>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="foot">
+                        <span><img src="Icons/star-plus-outline.svg" alt="star with a plus"></span>
+                        <span><img src="Icons/eye-plus-outline.svg" alt="eye with a plus"></span>
+                        <span><img src="Icons/source-fork.svg" alt="fork"></span>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card" id="ad">
                     <h3>Ad Blocker</h3>
                     <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis.
                         Aliquam sed malesuada eros.</p>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="foot">
+                        <span><img src="Icons/star-plus-outline.svg" alt="star with a plus"></span>
+                        <span><img src="Icons/eye-plus-outline.svg" alt="eye with a plus"></span>
+                        <span><img src="Icons/source-fork.svg" alt="fork"></span>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card" id="money">
                     <h3>Money Maker</h3>
                     <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque
                         tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="foot">
+                        <span><img src="Icons/star-plus-outline.svg" alt="star with a plus"></span>
+                        <span><img src="Icons/eye-plus-outline.svg" alt="eye with a plus"></span>
+                        <span><img src="Icons/source-fork.svg" alt="fork"></span>
+                    </div>
                 </div>
 
             </div>
-            <h3>Announcements</h3>
-            <div class="announcements">
-                <h4>Site Maintenance</h4>
-                <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. DOnec hendrerit sodales congue...
-                </p>
-                <h4>Community Share Day</h4>
-                <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
-                <h4>Updated Privacy Policy</h4>
-                <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis
-                    sem in mattis... </p>
-            </div>
+            <div class="main-right">
+                <div>
+                    <h3>Announcements</h3>
+                </div>
 
-            <div>Trending</div>
-            <div>
-                <span></span>
-                <p>@tegan</p>
-                <p>World Peace builder</p>
-                <span></span>
-                <p>@hamzeh</p>
-                <p>Super Cool Project</p>
-                <span></span>
-                <p>@kendall</p>
-                <p>Life Changing App</p>
-                <span></span>
-                <p>@alex</p>
-                <p>No Traffic Maker</p>
+                <div class="card-a">
+                    <div>
+                        <h4>Site Maintenance</h4>
+                        <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales
+                            congue...
+                        </p>
+                    </div>
+                    <hr>
+                    <div id="centre">
+                        <h4>Community Share Day</h4>
+                        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan
+                            porttitor...
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Updated Privacy Policy</h4>
+                        <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla
+                            sagittis
+                            sem in mattis... </p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Trending</h3>
+                </div>
+                <div class="card-b">
+                    <div>
+                        <span><img src="Icons/solaire.jpg" alt="image of the glorious soliare of astora!"></span>
+                        <p class="para-one">@solaire</p>
+                        <p class="para-two">Looking For Sun</p>
+                    </div>
+                    <div>
+                        <span><img src="Icons/bois.jpg" alt="the bois returneth"></span>
+                        <p class="para-one">@hamzeh</p>
+                        <p class="para-two">Super Cool Project</p>
+                    </div>
+                    <div>
+                        <span><img src="Icons/l-to-the-og.jpg" alt="kendall roy rapping to his father"></span>
+                        <p class="para-one">@kendall</p>
+                        <p class="para-two">Life Changing App</p>
+                    </div>
+                    <div>
+                        <span><img src="Icons/majima.jpg" alt="Majima chan of yakuza series"></span>
+                        <p class="para-one">@alex</p>
+                        <p class="para-two">No Traffic Maker</p>
+                    </div>
+                </div>
             </div>
-
         </div>
+
+    </div>
     </div>
 
 </body>
